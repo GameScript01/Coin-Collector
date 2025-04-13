@@ -75,6 +75,7 @@
             margin: 0 auto 20px;
             cursor: pointer;
             transition: all 0.3s;
+            -webkit-tap-highlight-color: transparent;
         }
         
         #coin {
@@ -83,6 +84,9 @@
             object-fit: contain;
             transition: all 0.2s;
             filter: drop-shadow(0 5px 15px rgba(255, 215, 0, 0.6));
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
         }
         
         .diamond {
@@ -163,6 +167,7 @@
             width: 100%;
             position: relative;
             overflow: hidden;
+            outline: none;
         }
         
         .diamond-upgrade {
@@ -236,6 +241,7 @@
             position: relative;
             overflow: hidden;
             margin-top: 10px;
+            outline: none;
         }
         
         .rebirth-btn::before {
@@ -323,6 +329,7 @@
             cursor: pointer;
             font-weight: bold;
             transition: all 0.2s;
+            outline: none;
         }
         
         .confirm-btn {
@@ -382,11 +389,17 @@
             transition: all 0.3s;
             font-size: 18px;
             color: white;
+            outline: none;
+            -webkit-tap-highlight-color: transparent;
         }
         
         .sound-btn:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: scale(1.1);
+        }
+        
+        *:focus {
+            outline: none;
         }
     </style>
 </head>
